@@ -128,6 +128,7 @@ Body {
   font-size: 16px;
   font-weight: bold;
   font-family: "Sora";
+  cursor: pointer;
 }
 
 .NavBarItem-Dropdown .Link:hover {

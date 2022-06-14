@@ -9,7 +9,7 @@ const NavBar = ( { allCategories }) => {
                     <Link className="Link" to="/">Home</Link>
                 </li>
                 <li className="NavBarItem-Dropdown">
-                    <Link className="Link" to="">All Categories</Link>
+                    <div className="Link">All Categories</div>
                     <NavSubmenu allCategories={allCategories}/>
                 </li>
                 <li className="NavBarItem">
