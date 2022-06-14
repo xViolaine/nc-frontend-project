@@ -1,6 +1,5 @@
 const ReviewCard = ( { review_id, title, owner, review_img_url, category, created_at, comment_count, votes, review_body }) => {
     const readMore = review_body.substring(0, 100) + ".."
-    console.log(readMore)
 
     return (
         <li className="ReviewCard">
