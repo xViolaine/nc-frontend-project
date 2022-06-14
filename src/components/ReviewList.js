@@ -3,13 +3,12 @@ import { useState, useEffect } from 'react';
 import { getReviews } from "../utils/API";
 import { useSearchParams } from "react-router-dom"
 
-const ReviewList = ({reviewByID, setReviewByID}) => {
+const ReviewList = () => {
     const [allReviews, setAllReviews] = useState([]);
 
 
     const [search, setSearch] = useSearchParams();
-    console.log(search.get('category'))
-const category = search.get('category')
+    const category = search.get('category')
 
     useEffect(() => {
         getReviews(category).then((reviewsFromAPI) => {
@@ -34,8 +33,8 @@ const category = search.get('category')
                         review_id={review_id}
                         votes={votes}
                         review_body={review_body}
-                        />
-)
+                    />
+                )
             })}
         </ul>
 

@@ -1,7 +1,17 @@
 import { Link } from "react-router-dom"
 import NavSubmenu from "./NavSubmenu"
+import { useEffect, useState } from 'react'
+import { getAllCategories } from './utils/API'
 
-const NavBar = ( { allCategories }) => {
+const NavBar = () => {
+  const [allCategories, setAllCategories] = useState([]);
+
+    useEffect(() => {
+        getAllCategories().then((categoriesFromAPI) => {
+          setAllCategories(categoriesFromAPI)
+        })
+      }, [])
+
     return (
         <nav className="NavBar">
             <ul className="NavPoints">
