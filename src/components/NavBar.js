@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import NavSubmenu from "./NavSubmenu"
 import { useEffect, useState } from 'react'
-import { getAllCategories } from './utils/API'
+import { getAllCategories } from '../utils/API'
 
 const NavBar = () => {
   const [allCategories, setAllCategories] = useState([]);
