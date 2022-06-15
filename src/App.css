@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+}
+
+Body {
+  min-height: 100vh;
   background-color: #d4cad4;
 
 }
@@ -20,7 +24,7 @@
 .ReviewList {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -59,5 +63,100 @@
 }
   
 .Preview {
+  text-align: left;
+}
+
+.NavHome {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 60px;
+}
+
+.NavSubmenu {
+  font-weight: 300;
+  text-transform: none;
+  display: none;
+  position: absolute;
+  background-color: #d6b6d6;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.NavBarItem-Dropdown:hover .NavSubmenu{
+    display: block;
+}
+
+.NavPoints {
+  display: flex;
+  list-style: none;
+}
+
+.NavBarItem {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Sora";
+  background-color: #d6b6d6;
+}
+
+.NavBarItem-Dropdown {
+  background-color: #d6b6d6;
+}
+
+.NavBarItem .Link {
+    display: block;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+    text-align: left;
+    padding: 0.7rem 1rem;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Sora";
+}
+
+.NavBarItem-Dropdown .Link {
+  display: block;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+  text-align: left;
+  padding: 0.7rem 1rem;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Sora";
+  cursor: pointer;
+}
+
+.NavBarItem-Dropdown .Link:hover {
+  background-color: #97D9E1;
+  transition: background-color 0.3s linear;
+}
+
+.NavBarItem .Link:hover {
+  background-color: #97D9E1;
+  transition: background-color 0.5s linear;
+}
+
+.NavSubmenuItem {
+  text-align:center;
+  padding: 0px;
+  font-family: "Sora";
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.NavSubmenuItem:hover {
+  background-color: #97D9E1;
+  transition: background-color 0.3s linear;
+}
+
+.NavBar {
+  display: inline-block;
+  margin: 2rem auto 0;
+  color: #000;
   text-align: left;
 }

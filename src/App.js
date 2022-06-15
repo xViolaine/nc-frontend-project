@@ -1,20 +1,20 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router'
 import Header from './components/Header'
 import NavBar from './components/NavBar'
 import ReviewList from './components/ReviewList'
-import { useState } from 'react'
+
 
 function App() {
-  const [reviewByID, setReviewByID] = useState();
-
   return (
     <div className="App">
-    <Header />  
-    <NavBar />  
-    <Routes>
-      <Route path="/"  element={<ReviewList reviewByID={reviewByID} setReviewByID={setReviewByID}/>} />
-    </Routes>
+      <Header />
+      <div className='NavHome'>
+        <NavBar />
+      </div>
+      <Routes>
+        <Route path="/reviews" element={<ReviewList />} />
+      </Routes>
     </div>
   );
 }

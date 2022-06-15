@@ -1,18 +1,20 @@
 import ReviewCard from "./ReviewCard"
 import { useState, useEffect } from 'react';
-import { getAllReviews } from "../utils/API";
+import { getReviews } from "../utils/API";
+import { useSearchParams } from "react-router-dom"
 
-const ReviewList = ({reviewByID, setReviewByID}) => {
+const ReviewList = () => {
     const [allReviews, setAllReviews] = useState([]);
 
-    useEffect(() => {
-        getAllReviews().then((reviewsFromAPI) => {
-            console.log(reviewsFromAPI)
-            setAllReviews(reviewsFromAPI)
-        })
-    }, []);
 
-    console.log(allReviews)
+    const [search, setSearch] = useSearchParams();
+    const category = search.get('category')
+
+    useEffect(() => {
+        getReviews(category).then((reviewsFromAPI) => {
+            setAllReviews(reviewsFromAPI);
+        })
+    }, [category]);
 
     return (
         <ul className="ReviewList">
@@ -31,8 +33,8 @@ const ReviewList = ({reviewByID, setReviewByID}) => {
                         review_id={review_id}
                         votes={votes}
                         review_body={review_body}
-                        />
-)
+                    />
+                )
             })}
         </ul>
 
