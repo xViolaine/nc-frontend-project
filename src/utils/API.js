@@ -12,13 +12,12 @@ export const getReviews = (category) => {
 
 export const getReviewByID = (review_id) => {
     return GLHFGamingAPI.get(`/reviews/${review_id}`).then(({ data }) => {
-        return data.reviews;
+        return data.review;
     })
 }
  
 export const getAllCategories = () => {
     return GLHFGamingAPI.get("/categories").then(({data}) => {
-        console.log(data)
         return data.categories;
     })
 }

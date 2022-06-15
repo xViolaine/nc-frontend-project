@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router'
 import Header from './components/Header'
 import NavBar from './components/NavBar'
 import ReviewList from './components/ReviewList'
+import { SingleReview } from './components/SingleReview';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       </div>
       <Routes>
         <Route path="/reviews" element={<ReviewList />} />
+        <Route path="/review/:review_id" element={<SingleReview />} />
       </Routes>
     </div>
   );
