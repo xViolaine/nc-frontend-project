@@ -5,8 +5,6 @@ import { useSearchParams } from "react-router-dom"
 
 const ReviewList = () => {
     const [allReviews, setAllReviews] = useState([]);
-
-
     const [search, setSearch] = useSearchParams();
     const category = search.get('category')
 
