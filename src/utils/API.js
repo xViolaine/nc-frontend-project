@@ -21,3 +21,9 @@ export const getAllCategories = () => {
         return data.categories;
     })
 }
+
+export const changeVote = (review_id, body) => {
+    return GLHFGamingAPI.patch(`/reviews/${review_id}`, body).then(({data}) => {
+        return data;
+    })
+}

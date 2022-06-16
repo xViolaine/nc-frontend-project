@@ -8,6 +8,14 @@ Body {
 
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 200,
+    'opsz' 48
+}
+
 .Logo {
   max-width: 160px;
   padding: 0px;
@@ -20,6 +28,60 @@ Body {
   object-fit: cover;
 }
 
+@media only screen and (max-width: 660px) {
+
+  .ReviewImage,
+  .SingleReviewImage {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+.Votes {
+  position: absolute;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  top: 151px;
+}
+
+@media only screen and (max-width: 660px) {
+  .Votes {
+    top: 26px;
+  }
+}
+
+.VotesBetweenArrows {
+position: absolute;
+right: 7px;
+top: 25px;
+font-weight: bold;
+color: #000;
+}
+
+.Downvote:hover {
+  color: rgb(133, 133, 212)
+}
+
+.Downvote-active {
+  color: rgb(133, 133, 212)
+}
+
+.Upvote-active {
+  color: rgb(218, 66, 66)
+ }
+
+.Upvote {
+color: #000
+}
+
+.Upvote:hover {
+  color: rgb(218, 66, 66)
+ }
+
+.imageContainer {
+  position: relative;
+}
 
 
 .ReviewList {
@@ -55,9 +117,9 @@ Body {
 }
 
 .ReviewCard {
-  width:100%;
+  width: 100%;
   max-width: 300px;
-  margin: 0px auto; 
+  margin: 0px auto;
   text-align: center;
   border: 1px;
   padding: 30px;
@@ -69,13 +131,14 @@ Body {
   background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 
 }
-  
+
 .Preview {
   text-align: left;
 }
 
 .NavBar {
   margin-top: 0px !important;
+  z-index: 1;
 }
 
 .NavHome {
@@ -98,8 +161,8 @@ Body {
   padding: 10px;
 }
 
-.NavBarItem-Dropdown:hover .NavSubmenu{
-    display: block;
+.NavBarItem-Dropdown:hover .NavSubmenu {
+  display: block;
 }
 
 .NavPoints {
@@ -125,14 +188,14 @@ Body {
 }
 
 .NavBarItem .Link {
-    display: block;
-    font-size: inherit;
-    color: inherit;
-    text-decoration: none;
-    padding: 0.7rem 1rem;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: "Sora";
+  display: block;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Sora";
 }
 
 .NavBarItem-Dropdown .Link {
@@ -159,7 +222,7 @@ Body {
 }
 
 .NavSubmenuItem {
-  text-align:center;
+  text-align: center;
   padding: 0px;
   font-family: "Sora";
   font-weight: normal;
@@ -184,6 +247,14 @@ Body {
   height: 350px;
   object-fit: cover;
 }
+
+@media only screen and (max-width: 660px) {
+  .SingleReviewImage {
+    width: 150px;
+    height: 100px;
+  }
+}
+
 
 .SingleReviewData {
   list-style: none;
@@ -217,27 +288,22 @@ Body {
   text-align: left;
 }
 
-@media only screen and (max-width: 450px) {
-  .ReviewImage, .SingleReviewImage {
-    width: 150px;
-    height: 100px;
-  }
-  }
-  
-  @media only screen and (max-width: 450px) {
-    .NavBar {
-      max-width: 350px;
-    }
-    }
-  
-    @media only screen and (max-width: 450px) {
-      .Link {
-        font-size: 11px !important;
-      }
-      }
 
-      @media only screen and (max-width: 450px) {
-        .SingleReviewHeading {
-          font-size: 16px !important;
-        }
-        }
+
+@media only screen and (max-width: 660px) {
+  .NavBar {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .Link {
+    font-size: 11px !important;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .SingleReviewHeading {
+    font-size: 16px !important;
+  }
+}
