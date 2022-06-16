@@ -290,7 +290,37 @@ color: #000
 
 .CommentList {
   list-style: none;
-  padding: 0px;
+  padding: 20px;
+  border-radius: 10%;
+  background-image: linear-gradient(0deg, #82d5df 0%, #d89bd8 100%);
+}
+
+.CommentCard {
+  background: rgba(245, 232, 239, 0.3);
+  border-radius: 10px;
+  list-style: none; 
+  padding: 10px;
+  margin: 10px;
+  
+}
+
+.CommentInfo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Author {
+  font-weight: bold;
+margin: 5px;
+}
+
+.CreatedAt {
+margin: 5px;
+}
+
+.CommentBody {
+margin: 5px;
+  
 }
 
 

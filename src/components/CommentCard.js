@@ -26,8 +26,10 @@ const CommentCard = ({ author, body, comment_id, votes, created_at, review_id })
 
     return (
         <li className="CommentCard">
+            <div className="CommentInfo">
             <p className="Author">{author}</p>
             <p className="CreatedAt">{timeSince(new Date(created_at).getTime())}</p>
+            </div>
             <p className="CommentBody">{body}</p>
         </li>
     )
