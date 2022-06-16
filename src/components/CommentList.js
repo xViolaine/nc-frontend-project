@@ -30,7 +30,6 @@ const CommentList = ({review_id}) => {
             })}
         </ul>
         </div>
-       
     )
 }
 
