@@ -22,22 +22,15 @@ const CommentCard = ({ author, body, comment_id, votes, created_at, review_id })
             const year = date.getFullYear() == now.getFullYear() ? "" : " " + date.getFullYear();
             return day + " " + month + year;
         }
-
-
-
-
     }
 
-console.log(new Date(created_at).getTime())
-
-
-return (
-    <li className="CommentCard">
-        <p className="Author">{author}</p>
-        <p className="CreatedAt">{timeSince(new Date(created_at).getTime())}</p>
-        <p className="CommentBody">{body}</p>
-    </li>
-)
+    return (
+        <li className="CommentCard">
+            <p className="Author">{author}</p>
+            <p className="CreatedAt">{timeSince(new Date(created_at).getTime())}</p>
+            <p className="CommentBody">{body}</p>
+        </li>
+    )
 }
 
 export default CommentCard;
