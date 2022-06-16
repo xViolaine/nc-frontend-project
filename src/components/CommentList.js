@@ -13,7 +13,8 @@ const CommentList = ({review_id}) => {
 
 
     return (
-        <ul className="CommentList">
+        <div className="CommentListHome">
+ <ul className="CommentList">
             {allComments.map((comment) => {
                 const { author, body, comment_id, votes, created_at, review_id } = comment;
 
@@ -28,6 +29,8 @@ const CommentList = ({review_id}) => {
                 )
             })}
         </ul>
+        </div>
+       
     )
 }
 
