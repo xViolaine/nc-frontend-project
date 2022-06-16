@@ -300,8 +300,7 @@ color: #000
   border-radius: 10px;
   list-style: none; 
   padding: 10px;
-  margin: 10px;
-  
+  margin: 10px; 
 }
 
 .CommentInfo {
@@ -310,7 +309,7 @@ color: #000
 }
 
 .Author {
-  font-weight: bold;
+font-weight: bold;
 margin: 5px;
 }
 
@@ -341,3 +340,4 @@ margin: 5px;
     font-size: 16px !important;
   }
 }
+
