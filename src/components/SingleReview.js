@@ -6,11 +6,8 @@ export const SingleReview = () => {
   const [votes, setVotes] = useState(0);
 
     const [review, setSingleReview] = useState({});
-    const [userVote, setUserVotes] = useState();
     const { review_id } = useParams();
     const [err, setErr] = useState(null);
-
-    console.log(review, votes)
 
     useEffect(() => {
         if (review_id) {
