@@ -101,7 +101,7 @@ color: #000
 
 .Preview {
   font-family: "Sora";
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .ReadMore {
@@ -128,6 +128,7 @@ color: #000
   border-color: rgb(175, 116, 177);
   font: black;
   border-style: solid;
+  font-size: 16px;
   background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 
 }
@@ -146,7 +147,7 @@ color: #000
   align-items: center;
   margin: 0px;
   margin-bottom: 7px;
-  padding: 0 20px;
+  padding: 0 5px;
   height: 60px;
 }
 
@@ -172,7 +173,7 @@ color: #000
 }
 
 .NavBarItem {
-  width: 150px;
+  width: 150px !important;
   position: relative;
   font-size: 16px;
   font-weight: bold;
@@ -226,7 +227,7 @@ color: #000
   padding: 0px;
   font-family: "Sora";
   font-weight: normal;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .NavSubmenuItem:hover {
@@ -281,13 +282,70 @@ color: #000
   text-align: center;
   background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
   background-color: #97D9E1;
-  border-radius: 10%;
+  border-radius: 25px;
 }
 
 .SingleReviewContent {
   text-align: left;
+  padding: 20px;
 }
 
+.CommentListHome {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.CommentList {
+  max-width: 500px;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  border-radius: 25px;
+  background-image: linear-gradient(0deg, #82d5df 0%, #d89bd8 100%);
+}
+
+@media only screen and (max-width: 660px) {
+  .CommentList {
+    padding: 10px;
+  }
+}
+
+.CommentCard {
+  background: rgba(245, 232, 239, 0.3);
+  border-radius: 10px;
+  list-style: none; 
+  padding: 10px;
+  margin: 10px; 
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 660px) {
+  .CommentCard {
+    padding: 3px;
+    margin: 5px;
+  }
+}
+
+.CommentInfo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Author {
+font-weight: bold;
+margin: 5px;
+}
+
+.CreatedAt {
+margin: 5px;
+}
+
+.CommentBody {
+margin: 5px;
+  
+}
 
 
 @media only screen and (max-width: 660px) {
@@ -298,7 +356,10 @@ color: #000
 
 @media only screen and (max-width: 660px) {
   .Link {
-    font-size: 11px !important;
+    font-size: 14px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+
   }
 }
 
@@ -307,3 +368,4 @@ color: #000
     font-size: 16px !important;
   }
 }
+

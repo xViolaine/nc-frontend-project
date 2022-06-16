@@ -27,3 +27,9 @@ export const changeVote = (review_id, body) => {
         return data;
     })
 }
+
+export const getAllComments = (review_id) => {
+    return GLHFGamingAPI.get(`/reviews/${review_id}/comments`).then(({data}) => {
+        return data.comments;
+    })
+}
