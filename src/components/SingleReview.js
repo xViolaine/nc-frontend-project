@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getReviewByID, changeVote } from "../utils/API";
+import CommentList from "./CommentList";
 
 export const SingleReview = () => {
   const [votes, setVotes] = useState(0);
@@ -69,6 +70,7 @@ export const SingleReview = () => {
             </ul>
 
             <p className="SingleReviewContent">{review.review_body}</p>
+            <CommentList review_id={review_id}/>
         </div>
 
     )
