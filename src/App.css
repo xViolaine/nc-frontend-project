@@ -356,7 +356,10 @@ margin: 5px;
 
 @media only screen and (max-width: 660px) {
   .Link {
-    font-size: 11px !important;
+    font-size: 14px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+
   }
 }
 
