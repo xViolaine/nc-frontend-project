@@ -3,6 +3,9 @@ const CommentCard = ({ author, body, comment_id, votes, created_at, review_id })
     function timeSince(timeStamp) {
         const now = new Date(),
             secondsPast = (now.getTime() - timeStamp) / 1000;
+        if (secondsPast < 30) {
+            return 'now';
+        }
         if (secondsPast < 60) {
             return parseInt(secondsPast) + 's';
         }
