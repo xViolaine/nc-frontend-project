@@ -33,3 +33,9 @@ export const getAllComments = (review_id) => {
         return data.comments;
     })
 }
+
+export const createNewComment = (review_id, body) => {
+    return GLHFGamingAPI.post(`/reviews/${review_id}/comments`, body).then(({data}) => {
+        return data;
+    })
+}
