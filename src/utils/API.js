@@ -4,8 +4,8 @@ const GLHFGamingAPI = axios.create({
     baseURL: "https://nc-backend-project-rest-api.herokuapp.com/api"
 });
 
-export const getReviews = (category) => {
-    return GLHFGamingAPI.get("/reviews", {params: {category: category}}).then(({ data }) => {
+export const getReviews = (category, order, sort_by) => {
+    return GLHFGamingAPI.get("/reviews", {params: {category, order, sort_by} }).then(({ data }) => {
         return data.reviews;
     })
 }
