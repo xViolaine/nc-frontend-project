@@ -22,17 +22,15 @@ const CreateComment = ({ review_id, allComments, setAllComments }) => {
         }).then((res) => {
             setAllComments(oldComments => {
                 const newComments = [ ...oldComments]
-                console.log(newComments)
                 newComments[0] = res.comment
-                console.log(newComments)
                 return newComments
             })
             setBody("")
             setDisableButton(false)
         })
             .catch((err) => {
-                console.log(err);
-            })
+                "An error occurred. Please try again later!"
+                            })
 
     }
 
