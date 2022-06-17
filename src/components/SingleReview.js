@@ -16,8 +16,8 @@ export const SingleReview = () => {
                 setSingleReview(reviewFromAPI);
             })
         }
-
-    }, []);
+        
+    }, [review_id]);
 
     const handleUpvote = () => {
         if (votes === 0) {
