@@ -18,7 +18,7 @@ const CommentList = ({review_id}) => {
  <ul className="CommentList">
             <CreateComment review_id={review_id} allComments={allComments} setAllComments={setAllComments}/>
             {allComments.map((comment) => {
-                const { author, body, comment_id, votes, created_at, review_id } = comment;
+                const { author, body, comment_id, votes, created_at } = comment;
 
                 return (
                     <CommentCard

@@ -3,7 +3,6 @@ import { createNewComment } from "../utils/API";
 
 const CreateComment = ({ review_id, allComments, setAllComments }) => {
     const [body, setBody] = useState("");
-    const [username, setUsername] = useState("");
     const [disableButton, setDisableButton] = useState(false);
 
     const handleSubmit = (event) => {
