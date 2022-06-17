@@ -84,6 +84,9 @@ color: #000
   position: relative;
 }
 
+.Select {
+  font-family: "Sora"
+}
 
 .ReviewList {
   display: flex;

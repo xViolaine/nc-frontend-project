@@ -10,7 +10,7 @@ const CommentList = ({review_id}) => {
         getAllComments(review_id).then((commentsFromAPI) => {
             setAllComments(commentsFromAPI);
         })
-    }, [])
+    }, [review_id])
 
 
     return (
